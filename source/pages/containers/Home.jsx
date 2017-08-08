@@ -33,7 +33,7 @@ class Home extends Component {
             <h2>Loading posts...</h2>
           )}
           {this.state.posts
-            .map(post => <Post {...post} />)
+            .map(post => <Post key={post.id} {...post} />)
           }
         </section>
         <Link to='/about'>
