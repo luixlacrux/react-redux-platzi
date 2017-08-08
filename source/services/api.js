@@ -12,7 +12,7 @@ const api = {
       const response = await fetchHelper(`${baseURL}/posts/${id}`);
       return response;
     },
-    async getComment(id = 1) {
+    async getComments(id = 1) {
       const response = await fetchHelper(`${baseURL}/posts/${id}/comments`);
       return response;
     },
@@ -20,8 +20,10 @@ const api = {
 
   users: {
     async getSingle (id = 1) {
-      const response = await fetchHelper(`${baseURL}/users/${id}/comments`);
+      const response = await fetchHelper(`${baseURL}/users/${id}`);
       return response
     }
   }
 }
+
+export default api

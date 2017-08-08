@@ -33,7 +33,7 @@ const fetchHelper = (url, options = {}, isFormData) => {
 
         return new Promise((resolve, reject) => {
           response
-            .json();
+            .json()
             .then((message) => {
               error.message = message.error;
               // Raven.captureException(error)

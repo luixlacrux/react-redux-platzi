@@ -18,7 +18,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['latest-minimal', 'react']
+            presets: ['latest-minimal', 'react'],
+            plugins: ['transform-object-rest-spread'],
           },          
         },
       },
