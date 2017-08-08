@@ -19,10 +19,12 @@
     "babel-preset-latest-minimal": "^1.1.2",
     "babel-preset-react": "^6.24.1",
     "json-loader": "^0.5.7",
+    "serve": "^6.0.6",
     "webpack": "^3.4.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bff": "node ./built/server",
+    "sfs": "serve ./built/static/ --port 3001 --cache 0"
   },
   "keywords": [],
   "author": "Luis Lacruz <luixlacrux18@gmail.com>",
