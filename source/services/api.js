@@ -22,7 +22,11 @@ const api = {
     async getSingle (id = 1) {
       const response = await fetchHelper(`${baseURL}/users/${id}`);
       return response
-    }
+    },
+    async getPosts (id = 1) {
+      const response = await fetchHelper(`${baseURL}/posts?userId=${id}`);
+      return response
+    },
   }
 }
 
